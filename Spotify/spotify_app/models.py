@@ -3,7 +3,7 @@ from django.db import models
 
 class Artist(models.Model):
     name = models.CharField(max_length=255)
-    image = models.URLField()
+    image = models.ImageField(upload_to="song_images")
     bio = models.TextField()
     age = models.IntegerField()
 
